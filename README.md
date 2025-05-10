@@ -29,3 +29,17 @@ What is the asymptotic runtime ($\Theta$) of your algorithm in terms of the
 number of comparisons of pancakes? What is it in terms of the number of flips?
 Add your answer to this markdown file.
 
+Asymptotic Runtime: ((n-1)n)/2 = $\Theta$(n^2)
+
+Flips:
+array length = n pancakes
+subarray = [0, 1, 2, ..., i-1], takes i-1 comparisons
+
+For each position, i, you perform 1 flip to bring the max to the front if needed, and 1 flip to bring it to its final position. This results in at most 2 flips per iteration for n-1 iterations, giving us the Flips runtime of 2(n-1) ∈ $\Theta$(n), thus $\Theta$(n).
+
+“I certify that I have listed all sources used to complete this exercise, including the use
+of any Large Language Models. All of the work is my own, except where stated
+otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is
+suspected, charges may be filed against me without prior notice.”
+
+For this assignment, I consulted with Chat GPT for clarity on my writing and to check my math was correct.
