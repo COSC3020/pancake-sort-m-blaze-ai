@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "eslint": "^9.26.0",
+    "eslint": "^8.57.1",
     "jsverify": "^0.8.4"
   }
 }
