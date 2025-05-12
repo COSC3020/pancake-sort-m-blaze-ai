@@ -34,8 +34,8 @@ Runtime (flips to sort):
 Iterate over each pancake position (excluding last): $\Theta$(n)
 For each position, find max in subarray [0..i]: $\Theta$(i)
 Perform up to 2 flips: $\Theta$(1) each
-Total work to find max over all positions: $\Theat$ (1 + 2 + ... + (n-1)) = $\Theta(n^2$)
-Total flips: 2 flips per iteration × (n - 1) = $\Theta$(n)
+Total work to find max over all positions: $\Theata$ (1 + 2 + ... + (n-1)) = $\Theta(n^2$)
+Total flips: 2 flips per iteration $\times$ (n - 1) = $\Theta$(n)
 
 For each position, i, you perform 1 flip to bring the max to the front if needed, and 1 flip to bring it to its final position. This results in at most 2 flips per iteration for n-1 iterations, giving us the Flips runtime of 2(n-1) $\epsilon \Theta$(n), thus $\Theta$(n).
 
