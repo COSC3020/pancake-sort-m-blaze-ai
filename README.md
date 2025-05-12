@@ -29,3 +29,19 @@ What is the asymptotic runtime ($\Theta$) of your algorithm in terms of the
 number of comparisons of pancakes? What is it in terms of the number of flips?
 Add your answer to this markdown file.
 
+Runtime (flips to sort):
+
+Iterate over each pancake position (excluding last): $\Theta$(n)
+For each position, find max in subarray [0..i]: $\Theta$(i)
+Perform up to 2 flips: $\Theta$(1) each
+Total work to find max over all positions: $\Theta$ (1 + 2 + ... + (n-1)) = $\Theta(n^2$)
+Total flips: 2 flips per iteration $\times$ (n - 1) = $\Theta$(n)
+
+For each position, i, you perform 1 flip to bring the max to the front if needed, and 1 flip to bring it to its final position. This results in at most 2 flips per iteration for n-1 iterations, giving us the Flips runtime of 2(n-1) $\epsilon \Theta$(n), thus $\Theta$(n).
+
+“I certify that I have listed all sources used to complete this exercise, including the use
+of any Large Language Models. All of the work is my own, except where stated
+otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is
+suspected, charges may be filed against me without prior notice.”
+
+For this assignment, I asked Chat GPT for help improving my reasoning, mostly regarding its presentation and articulation. I also used the website (upyesp)[https://www.upyesp.org/posts/makrdown-vscode-math-notation/] as a quick guide for adding mathematical expressions.
